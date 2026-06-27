@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💡 Quote Generator</h1>
+            <p>Get inspired with random quotes</p>
+        </header>
+
+        <main>
+            <div class="quote-box">
+                <blockquote id="quote-text" class="quote-text">
+                    Loading...
+                </blockquote>
+                <p id="quote-author" class="quote-author">— Author</p>
+            </div>
+
+            <div class="button-group">
+                <button id="new-quote-btn" class="btn btn-primary">New Quote</button>
+                <button id="tweet-btn" class="btn btn-secondary" target="_blank">Tweet Quote</button>
+                <button id="copy-btn" class="btn btn-secondary">Copy</button>
+            </div>
+
+            <div id="success" class="success hidden">✅ Quote copied!</div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://api.quotable.io" target="_blank">Quotable API</a></p>
+            <p><a href="../../index.html">← Back to Portfolio</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

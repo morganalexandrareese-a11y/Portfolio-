@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💱 Currency Converter</h1>
+            <p>Real-time exchange rates</p>
+        </header>
+
+        <main>
+            <div class="converter-box">
+                <div class="currency-section">
+                    <label>From</label>
+                    <div class="input-group">
+                        <input type="number" id="from-amount" placeholder="Enter amount" value="1" />
+                        <select id="from-currency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="swap-btn" class="swap-btn">⇅</button>
+
+                <div class="currency-section">
+                    <label>To</label>
+                    <div class="input-group">
+                        <input type="number" id="to-amount" placeholder="Converted amount" readonly />
+                        <select id="to-currency">
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rate-info">
+                <p>1 <span id="rate-from">USD</span> = <span id="rate-value">-</span> <span id="rate-to">EUR</span></p>
+            </div>
+
+            <div id="error" class="error hidden"></div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://api.exchangerate-api.com" target="_blank">ExchangeRate API</a></p>
+            <p><a href="../../index.html">← Back to Portfolio</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

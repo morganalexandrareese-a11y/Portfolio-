@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Pokemon Search</h1>
+            <p>Search and discover Pokemon</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="pokemon-input" placeholder="Enter Pokemon name or ID..." />
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="pokemon-info" class="pokemon-info hidden">
+                <img id="pokemon-image" src="" alt="Pokemon" />
+                <h2 id="pokemon-name"></h2>
+                <p id="pokemon-id"></p>
+                
+                <div class="types" id="pokemon-types"></div>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="label">Height</span>
+                        <span id="height" class="value"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Weight</span>
+                        <span id="weight" class="value"></span>
+                    </div>
+                </div>
+                
+                <div class="abilities">
+                    <span class="label">Abilities:</span>
+                    <span id="abilities"></span>
+                </div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <span class="spinner"></span>
+                <p>Searching...</p>
+            </div>
+
+            <div id="error" class="error hidden"></div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://pokeapi.co/" target="_blank">PokéAPI</a></p>
+            <p><a href="../../index.html">← Back to Portfolio</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

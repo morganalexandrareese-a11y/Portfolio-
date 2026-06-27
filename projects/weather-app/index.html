@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather App</h1>
+            <p>Get real-time weather information</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name..." />
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="weather-info" class="weather-info hidden">
+                <div class="weather-main">
+                    <h2 id="city-name"></h2>
+                    <div class="temp-display">
+                        <span id="temperature" class="temperature"></span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <p id="description"></p>
+                    <img id="weather-icon" src="" alt="Weather icon" />
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Feels Like</span>
+                        <span id="feels-like" class="value"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Humidity</span>
+                        <span id="humidity" class="value"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Wind Speed</span>
+                        <span id="wind-speed" class="value"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Pressure</span>
+                        <span id="pressure" class="value"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <span class="spinner"></span>
+                <p>Loading weather...</p>
+            </div>
+
+            <div id="error" class="error hidden"></div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></p>
+            <p><a href="../../index.html">← Back to Portfolio</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
